@@ -5,6 +5,11 @@
     font-weight: 300;
     text-anchor: middle;
 }
+.mapview {
+    width: 500px;
+    padding: 0.5em;
+    float: right;
+}
 .Beaver{
     fill: #7d3030;
 }
