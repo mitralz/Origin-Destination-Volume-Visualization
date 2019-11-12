@@ -1,9 +1,11 @@
 class Chord {
-	constructor(names, colors, data) {
+	constructor(names, colors, data, selector) {
 		this.names = names;
 		this.fill = d3.scaleOrdinal()
 			.domain(d3.range(names.length))
 			.range(colors);
+			
+		this.selector = selector;
 		//TODO this.matrix = matrix;
 		let row1 = [0,8900,2800,200,0,13700,300,9100,4800,1600,97700,28500,18900,30300,300,2600,0,77300,100,700,27800,3700,7700,100,42900,1100,66600,100,6200]
 		let row2 = [9100,0,148500,8000,0,144100,1000,4700,100,900,19700,18500,500,8300,13600,0,1200,300900,1700,3200,3100,21900,19900,700,74500,3800,14600,0,234700]
@@ -71,8 +73,8 @@ class Chord {
 		this.matrix = matrix;
 		
 		this.dims = {
-			width: 700,
-			height: 700,
+			width: 580,
+			height: 580,
 			outerRadius: 200,
 			innerRadius: 180
 		};
@@ -89,14 +91,17 @@ class Chord {
 	createChord() {
 		let that = this;
 		
-		d3.select("#chart").append("svg")
+		d3.select("#title-map-chord")
+		.append("g")
 		.attr("width", this.dims.width)
 		.attr("height", this.dims.height)
 		.attr("preserveAspectRatio", "xMaxYMin meet")
-		.append("g")
 		.attr("id","chord-diagram")
-		.attr("transform", "translate(" + (this.dims.width / 2) + "," + (this.dims.height / 2) + ")");
-		let chart = d3.select("#chart").select("#chord-diagram");
+		.attr("transform", "translate(" + (this.dims.width / 2 + 420) + "," + (this.dims.height / 2 + 50) + ")");
+		
+		let chart = d3.select("#title-map-chord")
+			.select("#chord-diagram")
+			.attr("x", 5000);
 
 		let layout = d3.chord()
 			.padAngle(this.chordPadding)
@@ -146,19 +151,10 @@ class Chord {
 			.style("stroke-opacity", this.opacity.full)
 			.style("fill-opacity", this.opacity.full);
 
-		d3.selectAll(".label")
-			.on("mouseover", fade(this.opacity.faded))
-			.on("mouseout", fade(this.opacity.full));
+		console.log(labels);
+		labels
+			.on("click", this.selector.fade());
     
-		function fade(opacity) {
-			return function (d, i) {
-				paths
-					.filter(d => d.source.index != i && d.target.index != i)
-					.transition()
-					.style("stroke-opacity", opacity)
-					.style("fill-opacity", opacity);
-			};
-		};
 	}
 }
 

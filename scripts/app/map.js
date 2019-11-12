@@ -1,55 +1,69 @@
 class Map {
-	constructor(names, colors, json) {
-		this.data = json;
-		this.width = 800
-		this.height = 800
+	constructor(names, colors, data, selector) {
+		this.data = data;
+		
+		this.fill = d3.scaleOrdinal()
+			.domain(d3.range(names.length))
+			.range(colors);
+
+		this.height = 650;
+		this.width = 400;
 		this.names=names;
+		
+		this.selector = selector;
 	}
 
 	createMap() {
+		let that = this;
+		
 		let data = this.data
-		let projection = d3.geoAlbersUsa()
-			.translate([1400 , 600]) // this centers the map in our SVG element
-			.scale([6500]); // this specifies how much to zoom
-
+		let projection = d3.geoMercator()
+			.translate([9950 , 4050]) // this centers the map in our SVG element
+			.scale([5000]); // this specifies how much to zoom
+			
 // This converts the projected lat/lon coordinates into an SVG path string
 		let path = d3.geoPath()
 			.projection(projection);
-		console.log(data.features)
-		let svg = d3.select("#mapchart").append("svg")
-			.attr("width",  this.width)
+						
+		let svg = d3.select("#title-map-chord")
+			.append("g")
+			.attr("id", "map-container")
+			.attr("max-height","500px")
+			.attr("preserveAspectRatio", "xMinYMin meet")
+			.attr("viewBox", "0 0 440 300")
+			.attr("width", this.width)
 			.attr("height", this.height)
-			.attr("class", "mapview");
+			.attr("transform","translate(0,80)");
 
-		let svg1 = svg.selectAll("path")
-			.data(data.features)
-			.join("path")
-			.attr("d", path)
-			.attr('transform', 'rotate(-9)')
-			.attr("class", function(d,i) {
-				if (d.properties.NAME10 == 'Salt Lake'){
-					return 'SaltLake'
-				}
-				if (d.properties.NAME10 == 'Box Elder'){
-					return 'BoxElder'
-				}
-				if (d.properties.NAME10 == 'San Juan'){
-					return 'SanJuan'
-				}
-				return  d.properties.NAME10
-			});
+			
+		let map = d3.select("#title-map-chord")
+			.select("#map-container")
+			.append("g")
+			.attr("id","map");
 
-		//svg1.append("g").selectAll("text")
-		//	.data(this.names)
-		//	.join("text")
-		//	.text((d) => {return d})
-		svg1.append("text")
+		let g = map.selectAll("g")
+			.data(data)
+			.enter()
+			.append("g")
+			.attr("class","county");
+			
+		g.append("path")
+			.attr("d",path)
+			.attr("fill",(d,i) => d3.rgb(that.fill(i)))
+			.attr("opacity","0.8");
+		g.on("click", that.selector.fade());
+
+		g.append("text")
 			.attr("class", "county-label")
-			.attr('x', 0)
-			.attr('y', 0)
+			.attr("y", "5px")
 			.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
 			.text((d) => {return d.properties.NAME10})
-			.style('fill', 'black');
+			.classed("heavy","true")
+			.style("fill-opacity",1)
+			.style("stroke-opacity",0.2)
+			.style("fill","black")
+			.style("stroke","white")
+			.style("stroke-width","0.5px");
 		
 	}
 }

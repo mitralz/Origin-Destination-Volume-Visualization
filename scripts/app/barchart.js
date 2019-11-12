@@ -1,6 +1,5 @@
 class Barchart {
-	constructor(names, colors, data) {
-		console.log(data)
+	constructor(names, colors, data, selector) {
 
 		this.width = 450
 		this.height = 800
@@ -19,13 +18,18 @@ class Barchart {
 
 		let xAxis = d3.axisBottom();
 		xAxis.scale(xScale);
-		console.log(max)
 		//let barscale = d3.scaleLinear().range([0, this.bar['width'] - this.bar['buffer'] ]);
 		//barscale.domain([0, 1]);
 		//this.xAxis = xAxis;
 		this.yScale = yScale;
 		this.xScale = xScale;
 		this.names=names;
+		
+		this.fill = d3.scaleOrdinal()
+			.domain(d3.range(names.length))
+			.range(colors);
+			
+		this.selector = selector;
 
 	}
 	
@@ -37,7 +41,6 @@ class Barchart {
 		//console.log(d3.max(origin, d => +d.count))
 		let destination = data.filter((d) => {return d.destination == this.name;})
 		let spacing = this.height / origin.length;
-		console.log(origin)
 
 		//origin = origin.sort(function (a, b) {
 					// sorting by magnitude
@@ -45,7 +48,6 @@ class Barchart {
 		//});
 		let max1 = d3.max(origin, d => +d.count)
 		let max2 = d3.max(destination, d => +d.count)
-		console.log(Math.max(max1, max2))
 ///////////////////////////////////////////////
 		let xScale1 = d3.scaleLinear()
 			.domain([0, Math.max(max1, max2)])
@@ -104,7 +106,9 @@ class Barchart {
 			.attr("transform", `translate(${this.textWidth},${this.height})`)
 			.call(xAxis2);
 ///////////////////////////////////////////////
-		svg.append("g").selectAll("rect")
+		svg.append("g")
+			.attr("id","exiting")
+			.selectAll("rect")
 			.data(origin)
 			.join("rect")
 			.attr("x",this.width+this.textWidth)
@@ -114,8 +118,8 @@ class Barchart {
 			})
 			.attr("height", this.yScale.bandwidth())
 			//.style("fill", 'blue')
-			.attr("fill", (d) => {
-				return ColorScale1(+d.count)
+			.attr("fill", (d,i) => {
+				return d3.rgb(this.fill(i));
 			})
 			.html("")
 			.append("title")
@@ -123,7 +127,9 @@ class Barchart {
 				return `number of exiting trips: ${+d.count}`;
 			});
 ///////////////////////////////////////////////
-		svg.append("g").selectAll("rect")
+		svg.append("g")
+			.attr("id","entering")
+			.selectAll("rect")
 			.data(destination)
 			.join("rect")
 			.attr("x",(d) => {return this.width-25  - xScale2(- +d.count);
@@ -136,15 +142,14 @@ class Barchart {
 			})
 			.attr("height", this.yScale.bandwidth())
 			//.style("fill", 'blue')
-			.attr("fill", (d) => {
-				return ColorScale2(+d.count)
+			.attr("fill", (d,i) => {
+				return d3.rgb(this.fill(i));
 			})
 			.html("")
 			.append("title")
 			.text(d => {
 				return `number of entering trips: ${+d.count}`;
 			});
-console.log(this.names)
 
 		svg.append("g").selectAll("text")
 			.data(this.names)
@@ -191,5 +196,28 @@ console.log(this.names)
 			.attr("x2", this.width +70)     // x position of the second end of the line
 			.attr("y2", this.height);
 
+	}
+	
+	updateBarchart(){
+		let that = this;
+		
+		let entering =  d3.select("#bar-chart")
+			.select("#entering")
+			.selectAll("rect");
+		
+		entering.on("click", function (d,i) {	
+			that.selector.fade(d.origin,i);
+		});
+		
+		let exiting = d3.select("#bar-chart")
+			.select("#exiting")
+			.selectAll("rect");
+			
+		exiting.on("click", function(d,i) {
+			that.selector.fade(d.destination,i);
+		});
+		
+		entering.attr("opacity",0.8);
+		exiting.attr("opacity",0.8);
 	}
 }

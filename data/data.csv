@@ -1,0 +1,842 @@
+origin,destination,count
+Beaver,Beaver,0
+Beaver,Box Elder,8900
+Beaver,Cache,2800
+Beaver,Carbon,200
+Beaver,Daggett,0
+Beaver,Davis,13700
+Beaver,Duchesne,300
+Beaver,Emery,9100
+Beaver,Garfield,4800
+Beaver,Grand,1600
+Beaver,Iron,97700
+Beaver,Juab,28500
+Beaver,Kane,18900
+Beaver,Millard,30300
+Beaver,Morgan,300
+Beaver,Piute,2600
+Beaver,Rich,0
+Beaver,Salt Lake,77300
+Beaver,San Juan,100
+Beaver,Sanpete,700
+Beaver,Sevier,27800
+Beaver,Summit,3700
+Beaver,Tooele,7700
+Beaver,Uintah,100
+Beaver,Utah,42900
+Beaver,Wasatch,1100
+Beaver,Washington,66600
+Beaver,Wayne,100
+Beaver,Weber,6200
+Box Elder,Beaver,9100
+Box Elder,Box Elder,0
+Box Elder,Cache,148500
+Box Elder,Carbon,8000
+Box Elder,Daggett,0
+Box Elder,Davis,144100
+Box Elder,Duchesne,1000
+Box Elder,Emery,4700
+Box Elder,Garfield,100
+Box Elder,Grand,900
+Box Elder,Iron,19700
+Box Elder,Juab,18500
+Box Elder,Kane,500
+Box Elder,Millard,8300
+Box Elder,Morgan,13600
+Box Elder,Piute,0
+Box Elder,Rich,1200
+Box Elder,Salt Lake,300900
+Box Elder,San Juan,1700
+Box Elder,Sanpete,3200
+Box Elder,Sevier,3100
+Box Elder,Summit,21900
+Box Elder,Tooele,19900
+Box Elder,Uintah,700
+Box Elder,Utah,74500
+Box Elder,Wasatch,3800
+Box Elder,Washington,14600
+Box Elder,Wayne,0
+Box Elder,Weber,234700
+Cache,Beaver,3700
+Cache,Box Elder,136200
+Cache,Cache,0
+Cache,Carbon,600
+Cache,Daggett,0
+Cache,Davis,62700
+Cache,Duchesne,300
+Cache,Emery,500
+Cache,Garfield,0
+Cache,Grand,100
+Cache,Iron,2800
+Cache,Juab,5900
+Cache,Kane,300
+Cache,Millard,2600
+Cache,Morgan,4900
+Cache,Piute,0
+Cache,Rich,14100
+Cache,Salt Lake,111100
+Cache,San Juan,200
+Cache,Sanpete,200
+Cache,Sevier,200
+Cache,Summit,5000
+Cache,Tooele,4700
+Cache,Uintah,200
+Cache,Utah,18200
+Cache,Wasatch,500
+Cache,Washington,1500
+Cache,Wayne,0
+Cache,Weber,87200
+Carbon,Beaver,200
+Carbon,Box Elder,8500
+Carbon,Cache,1000
+Carbon,Carbon,0
+Carbon,Daggett,100
+Carbon,Davis,9100
+Carbon,Duchesne,35800
+Carbon,Emery,52200
+Carbon,Garfield,0
+Carbon,Grand,10000
+Carbon,Iron,500
+Carbon,Juab,1300
+Carbon,Kane,0
+Carbon,Millard,100
+Carbon,Morgan,4300
+Carbon,Piute,0
+Carbon,Rich,0
+Carbon,Salt Lake,41400
+Carbon,San Juan,9900
+Carbon,Sanpete,2500
+Carbon,Sevier,10600
+Carbon,Summit,600
+Carbon,Tooele,2800
+Carbon,Uintah,7800
+Carbon,Utah,34900
+Carbon,Wasatch,2500
+Carbon,Washington,400
+Carbon,Wayne,500
+Carbon,Weber,5000
+Daggett,Beaver,0
+Daggett,Box Elder,100
+Daggett,Cache,0
+Daggett,Carbon,0
+Daggett,Daggett,0
+Daggett,Davis,200
+Daggett,Duchesne,600
+Daggett,Emery,100
+Daggett,Garfield,0
+Daggett,Grand,100
+Daggett,Iron,0
+Daggett,Juab,0
+Daggett,Kane,0
+Daggett,Millard,0
+Daggett,Morgan,0
+Daggett,Piute,0
+Daggett,Rich,0
+Daggett,Salt Lake,700
+Daggett,San Juan,0
+Daggett,Sanpete,0
+Daggett,Sevier,0
+Daggett,Summit,200
+Daggett,Tooele,0
+Daggett,Uintah,2800
+Daggett,Utah,0
+Daggett,Wasatch,100
+Daggett,Washington,0
+Daggett,Wayne,0
+Daggett,Weber,200
+Davis,Beaver,14200
+Davis,Box Elder,152700
+Davis,Cache,63500
+Davis,Carbon,5500
+Davis,Daggett,100
+Davis,Davis,0
+Davis,Duchesne,131800
+Davis,Emery,5000
+Davis,Garfield,300
+Davis,Grand,1700
+Davis,Iron,14400
+Davis,Juab,26400
+Davis,Kane,300
+Davis,Millard,10500
+Davis,Morgan,38900
+Davis,Piute,100
+Davis,Rich,800
+Davis,Salt Lake,1704900
+Davis,San Juan,2000
+Davis,Sanpete,2900
+Davis,Sevier,3500
+Davis,Summit,47100
+Davis,Tooele,73900
+Davis,Uintah,12700
+Davis,Utah,182400
+Davis,Wasatch,40700
+Davis,Washington,12100
+Davis,Wayne,100
+Davis,Weber,737400
+Duchesne,Beaver,100
+Duchesne,Box Elder,3400
+Duchesne,Cache,100
+Duchesne,Carbon,31600
+Duchesne,Daggett,400
+Duchesne,Davis,139200
+Duchesne,Duchesne,0
+Duchesne,Emery,600
+Duchesne,Garfield,100
+Duchesne,Grand,400
+Duchesne,Iron,400
+Duchesne,Juab,1000
+Duchesne,Kane,100
+Duchesne,Millard,300
+Duchesne,Morgan,700
+Duchesne,Piute,0
+Duchesne,Rich,100
+Duchesne,Salt Lake,70800
+Duchesne,San Juan,200
+Duchesne,Sanpete,300
+Duchesne,Sevier,300
+Duchesne,Summit,6700
+Duchesne,Tooele,900
+Duchesne,Uintah,206500
+Duchesne,Utah,10300
+Duchesne,Wasatch,33000
+Duchesne,Washington,200
+Duchesne,Wayne,0
+Duchesne,Weber,3000
+Emery,Beaver,11300
+Emery,Box Elder,5900
+Emery,Cache,400
+Emery,Carbon,56700
+Emery,Daggett,0
+Emery,Davis,5700
+Emery,Duchesne,2500
+Emery,Emery,0
+Emery,Garfield,200
+Emery,Grand,15700
+Emery,Iron,16600
+Emery,Juab,2300
+Emery,Kane,0
+Emery,Millard,1000
+Emery,Morgan,3400
+Emery,Piute,0
+Emery,Rich,0
+Emery,Salt Lake,35600
+Emery,San Juan,16900
+Emery,Sanpete,2000
+Emery,Sevier,39700
+Emery,Summit,400
+Emery,Tooele,2600
+Emery,Uintah,600
+Emery,Utah,30100
+Emery,Wasatch,1100
+Emery,Washington,7500
+Emery,Wayne,1300
+Emery,Weber,6900
+Garfield,Beaver,7900
+Garfield,Box Elder,100
+Garfield,Cache,100
+Garfield,Carbon,0
+Garfield,Daggett,0
+Garfield,Davis,200
+Garfield,Duchesne,100
+Garfield,Emery,300
+Garfield,Garfield,0
+Garfield,Grand,600
+Garfield,Iron,9400
+Garfield,Juab,1700
+Garfield,Kane,25700
+Garfield,Millard,2900
+Garfield,Morgan,0
+Garfield,Piute,1300
+Garfield,Rich,0
+Garfield,Salt Lake,3400
+Garfield,San Juan,200
+Garfield,Sanpete,800
+Garfield,Sevier,4800
+Garfield,Summit,200
+Garfield,Tooele,100
+Garfield,Uintah,0
+Garfield,Utah,3100
+Garfield,Wasatch,100
+Garfield,Washington,7000
+Garfield,Wayne,3200
+Garfield,Weber,200
+Grand,Beaver,5900
+Grand,Box Elder,1700
+Grand,Cache,100
+Grand,Carbon,10200
+Grand,Daggett,0
+Grand,Davis,3000
+Grand,Duchesne,400
+Grand,Emery,27600
+Grand,Garfield,200
+Grand,Grand,0
+Grand,Iron,7800
+Grand,Juab,200
+Grand,Kane,0
+Grand,Millard,400
+Grand,Morgan,0
+Grand,Piute,100
+Grand,Rich,0
+Grand,Salt Lake,12600
+Grand,San Juan,29300
+Grand,Sanpete,400
+Grand,Sevier,12700
+Grand,Summit,100
+Grand,Tooele,200
+Grand,Uintah,700
+Grand,Utah,7800
+Grand,Wasatch,200
+Grand,Washington,2800
+Grand,Wayne,1500
+Grand,Weber,500
+Iron,Beaver,101600
+Iron,Box Elder,18500
+Iron,Cache,1700
+Iron,Carbon,200
+Iron,Daggett,0
+Iron,Davis,17400
+Iron,Duchesne,100
+Iron,Emery,18500
+Iron,Garfield,8800
+Iron,Grand,1800
+Iron,Iron,0
+Iron,Juab,55400
+Iron,Kane,10000
+Iron,Millard,62400
+Iron,Morgan,100
+Iron,Piute,500
+Iron,Rich,100
+Iron,Salt Lake,108000
+Iron,San Juan,200
+Iron,Sanpete,1100
+Iron,Sevier,48100
+Iron,Summit,7000
+Iron,Tooele,10900
+Iron,Uintah,100
+Iron,Utah,76600
+Iron,Wasatch,1700
+Iron,Washington,256200
+Iron,Wayne,500
+Iron,Weber,13200
+Juab,Beaver,34000
+Juab,Box Elder,18700
+Juab,Cache,2500
+Juab,Carbon,600
+Juab,Daggett,0
+Juab,Davis,20200
+Juab,Duchesne,600
+Juab,Emery,2400
+Juab,Garfield,1500
+Juab,Grand,400
+Juab,Iron,54200
+Juab,Juab,0
+Juab,Kane,3200
+Juab,Millard,24200
+Juab,Morgan,800
+Juab,Piute,300
+Juab,Rich,0
+Juab,Salt Lake,97700
+Juab,San Juan,1200
+Juab,Sanpete,13900
+Juab,Sevier,22400
+Juab,Summit,6900
+Juab,Tooele,9700
+Juab,Uintah,100
+Juab,Utah,81600
+Juab,Wasatch,2100
+Juab,Washington,30800
+Juab,Wayne,200
+Juab,Weber,10700
+Kane,Beaver,17500
+Kane,Box Elder,100
+Kane,Cache,0
+Kane,Carbon,100
+Kane,Daggett,0
+Kane,Davis,300
+Kane,Duchesne,0
+Kane,Emery,100
+Kane,Garfield,30100
+Kane,Grand,100
+Kane,Iron,12000
+Kane,Juab,2600
+Kane,Kane,0
+Kane,Millard,3700
+Kane,Morgan,0
+Kane,Piute,800
+Kane,Rich,0
+Kane,Salt Lake,4000
+Kane,San Juan,0
+Kane,Sanpete,100
+Kane,Sevier,4400
+Kane,Summit,0
+Kane,Tooele,100
+Kane,Uintah,0
+Kane,Utah,2900
+Kane,Wasatch,100
+Kane,Washington,25000
+Kane,Wayne,200
+Kane,Weber,400
+Millard,Beaver,35100
+Millard,Box Elder,13900
+Millard,Cache,900
+Millard,Carbon,400
+Millard,Daggett,100
+Millard,Davis,13200
+Millard,Duchesne,300
+Millard,Emery,700
+Millard,Garfield,2000
+Millard,Grand,600
+Millard,Iron,51200
+Millard,Juab,26600
+Millard,Kane,4900
+Millard,Millard,0
+Millard,Morgan,100
+Millard,Piute,200
+Millard,Rich,0
+Millard,Salt Lake,68300
+Millard,San Juan,100
+Millard,Sanpete,1200
+Millard,Sevier,9700
+Millard,Summit,4000
+Millard,Tooele,11300
+Millard,Uintah,100
+Millard,Utah,48000
+Millard,Wasatch,1600
+Millard,Washington,31000
+Millard,Wayne,100
+Millard,Weber,7600
+Morgan,Beaver,200
+Morgan,Box Elder,14300
+Morgan,Cache,4000
+Morgan,Carbon,2500
+Morgan,Daggett,0
+Morgan,Davis,38700
+Morgan,Duchesne,700
+Morgan,Emery,3800
+Morgan,Garfield,0
+Morgan,Grand,0
+Morgan,Iron,300
+Morgan,Juab,700
+Morgan,Kane,0
+Morgan,Millard,100
+Morgan,Morgan,0
+Morgan,Piute,0
+Morgan,Rich,200
+Morgan,Salt Lake,28500
+Morgan,San Juan,0
+Morgan,Sanpete,400
+Morgan,Sevier,600
+Morgan,Summit,13400
+Morgan,Tooele,600
+Morgan,Uintah,100
+Morgan,Utah,3100
+Morgan,Wasatch,1400
+Morgan,Washington,100
+Morgan,Wayne,0
+Morgan,Weber,64400
+Piute,Beaver,3700
+Piute,Box Elder,0
+Piute,Cache,0
+Piute,Carbon,0
+Piute,Daggett,0
+Piute,Davis,300
+Piute,Duchesne,0
+Piute,Emery,100
+Piute,Garfield,2200
+Piute,Grand,0
+Piute,Iron,800
+Piute,Juab,100
+Piute,Kane,700
+Piute,Millard,100
+Piute,Morgan,0
+Piute,Piute,0
+Piute,Rich,0
+Piute,Salt Lake,700
+Piute,San Juan,0
+Piute,Sanpete,200
+Piute,Sevier,4100
+Piute,Summit,200
+Piute,Tooele,0
+Piute,Uintah,0
+Piute,Utah,300
+Piute,Wasatch,100
+Piute,Washington,400
+Piute,Wayne,100
+Piute,Weber,0
+Rich,Beaver,0
+Rich,Box Elder,900
+Rich,Cache,11000
+Rich,Carbon,0
+Rich,Daggett,0
+Rich,Davis,800
+Rich,Duchesne,0
+Rich,Emery,0
+Rich,Garfield,0
+Rich,Grand,0
+Rich,Iron,0
+Rich,Juab,100
+Rich,Kane,0
+Rich,Millard,100
+Rich,Morgan,400
+Rich,Piute,0
+Rich,Rich,0
+Rich,Salt Lake,3700
+Rich,San Juan,0
+Rich,Sanpete,0
+Rich,Sevier,0
+Rich,Summit,400
+Rich,Tooele,100
+Rich,Uintah,0
+Rich,Utah,400
+Rich,Wasatch,100
+Rich,Washington,0
+Rich,Wayne,0
+Rich,Weber,1200
+Salt Lake,Beaver,71000
+Salt Lake,Box Elder,310300
+Salt Lake,Cache,123400
+Salt Lake,Carbon,34200
+Salt Lake,Daggett,500
+Salt Lake,Davis,1744100
+Salt Lake,Duchesne,57200
+Salt Lake,Emery,21800
+Salt Lake,Garfield,3100
+Salt Lake,Grand,7600
+Salt Lake,Iron,88000
+Salt Lake,Juab,105800
+Salt Lake,Kane,4400
+Salt Lake,Millard,48700
+Salt Lake,Morgan,26200
+Salt Lake,Piute,100
+Salt Lake,Rich,3800
+Salt Lake,Salt Lake,0
+Salt Lake,San Juan,8500
+Salt Lake,Sanpete,13600
+Salt Lake,Sevier,19600
+Salt Lake,Summit,532600
+Salt Lake,Tooele,466700
+Salt Lake,Uintah,14100
+Salt Lake,Utah,1792500
+Salt Lake,Wasatch,121500
+Salt Lake,Washington,49900
+Salt Lake,Wayne,200
+Salt Lake,Weber,670100
+San Juan,Beaver,100
+San Juan,Box Elder,2600
+San Juan,Cache,100
+San Juan,Carbon,11500
+San Juan,Daggett,100
+San Juan,Davis,2600
+San Juan,Duchesne,1300
+San Juan,Emery,25100
+San Juan,Garfield,100
+San Juan,Grand,26400
+San Juan,Iron,100
+San Juan,Juab,300
+San Juan,Kane,100
+San Juan,Millard,100
+San Juan,Morgan,0
+San Juan,Piute,0
+San Juan,Rich,0
+San Juan,Salt Lake,9300
+San Juan,San Juan,0
+San Juan,Sanpete,300
+San Juan,Sevier,1100
+San Juan,Summit,200
+San Juan,Tooele,500
+San Juan,Uintah,100
+San Juan,Utah,10800
+San Juan,Wasatch,400
+San Juan,Washington,400
+San Juan,Wayne,1000
+San Juan,Weber,2500
+Sanpete,Beaver,900
+Sanpete,Box Elder,1700
+Sanpete,Cache,0
+Sanpete,Carbon,2200
+Sanpete,Daggett,0
+Sanpete,Davis,2800
+Sanpete,Duchesne,100
+Sanpete,Emery,900
+Sanpete,Garfield,500
+Sanpete,Grand,200
+Sanpete,Iron,1300
+Sanpete,Juab,10100
+Sanpete,Kane,100
+Sanpete,Millard,1400
+Sanpete,Morgan,0
+Sanpete,Piute,100
+Sanpete,Rich,0
+Sanpete,Salt Lake,16800
+Sanpete,San Juan,300
+Sanpete,Sanpete,0
+Sanpete,Sevier,32400
+Sanpete,Summit,100
+Sanpete,Tooele,900
+Sanpete,Uintah,0
+Sanpete,Utah,20200
+Sanpete,Wasatch,200
+Sanpete,Washington,1100
+Sanpete,Wayne,100
+Sanpete,Weber,1800
+Sevier,Beaver,25000
+Sevier,Box Elder,1800
+Sevier,Cache,300
+Sevier,Carbon,11200
+Sevier,Daggett,0
+Sevier,Davis,4500
+Sevier,Duchesne,500
+Sevier,Emery,33100
+Sevier,Garfield,4600
+Sevier,Grand,3800
+Sevier,Iron,39800
+Sevier,Juab,15400
+Sevier,Kane,5000
+Sevier,Millard,7000
+Sevier,Morgan,500
+Sevier,Piute,5400
+Sevier,Rich,0
+Sevier,Salt Lake,21700
+Sevier,San Juan,1200
+Sevier,Sanpete,27300
+Sevier,Sevier,0
+Sevier,Summit,400
+Sevier,Tooele,1100
+Sevier,Uintah,300
+Sevier,Utah,15800
+Sevier,Wasatch,200
+Sevier,Washington,26700
+Sevier,Wayne,4700
+Sevier,Weber,2500
+Summit,Beaver,2700
+Summit,Box Elder,11400
+Summit,Cache,2700
+Summit,Carbon,400
+Summit,Daggett,100
+Summit,Davis,48900
+Summit,Duchesne,6500
+Summit,Emery,100
+Summit,Garfield,100
+Summit,Grand,100
+Summit,Iron,3400
+Summit,Juab,4400
+Summit,Kane,100
+Summit,Millard,2000
+Summit,Morgan,10000
+Summit,Piute,0
+Summit,Rich,400
+Summit,Salt Lake,506200
+Summit,San Juan,100
+Summit,Sanpete,600
+Summit,Sevier,200
+Summit,Summit,0
+Summit,Tooele,20100
+Summit,Uintah,1600
+Summit,Utah,57100
+Summit,Wasatch,148300
+Summit,Washington,1300
+Summit,Wayne,0
+Summit,Weber,25800
+Tooele,Beaver,4100
+Tooele,Box Elder,27400
+Tooele,Cache,7000
+Tooele,Carbon,2700
+Tooele,Daggett,0
+Tooele,Davis,78400
+Tooele,Duchesne,600
+Tooele,Emery,2400
+Tooele,Garfield,200
+Tooele,Grand,300
+Tooele,Iron,7000
+Tooele,Juab,7000
+Tooele,Kane,300
+Tooele,Millard,5100
+Tooele,Morgan,700
+Tooele,Piute,100
+Tooele,Rich,100
+Tooele,Salt Lake,454100
+Tooele,San Juan,700
+Tooele,Sanpete,900
+Tooele,Sevier,1500
+Tooele,Summit,27800
+Tooele,Tooele,0
+Tooele,Uintah,1100
+Tooele,Utah,43600
+Tooele,Wasatch,2200
+Tooele,Washington,4600
+Tooele,Wayne,0
+Tooele,Weber,32200
+Uintah,Beaver,0
+Uintah,Box Elder,1900
+Uintah,Cache,200
+Uintah,Carbon,13400
+Uintah,Daggett,2600
+Uintah,Davis,18700
+Uintah,Duchesne,203000
+Uintah,Emery,700
+Uintah,Garfield,0
+Uintah,Grand,600
+Uintah,Iron,0
+Uintah,Juab,400
+Uintah,Kane,0
+Uintah,Millard,100
+Uintah,Morgan,300
+Uintah,Piute,0
+Uintah,Rich,0
+Uintah,Salt Lake,15600
+Uintah,San Juan,400
+Uintah,Sanpete,100
+Uintah,Sevier,400
+Uintah,Summit,900
+Uintah,Tooele,1100
+Uintah,Uintah,0
+Uintah,Utah,9700
+Uintah,Wasatch,8000
+Uintah,Washington,0
+Uintah,Wayne,0
+Uintah,Weber,1200
+Utah,Beaver,49500
+Utah,Box Elder,69400
+Utah,Cache,9800
+Utah,Carbon,54200
+Utah,Daggett,0
+Utah,Davis,173400
+Utah,Duchesne,23500
+Utah,Emery,31300
+Utah,Garfield,1700
+Utah,Grand,10600
+Utah,Iron,78400
+Utah,Juab,98700
+Utah,Kane,4700
+Utah,Millard,44000
+Utah,Morgan,5500
+Utah,Piute,600
+Utah,Rich,100
+Utah,Salt Lake,1723100
+Utah,San Juan,16800
+Utah,Sanpete,25200
+Utah,Sevier,17100
+Utah,Summit,55900
+Utah,Tooele,44100
+Utah,Uintah,8400
+Utah,Utah,0
+Utah,Wasatch,76800
+Utah,Washington,36400
+Utah,Wayne,400
+Utah,Weber,80200
+Wasatch,Beaver,900
+Wasatch,Box Elder,2200
+Wasatch,Cache,600
+Wasatch,Carbon,1000
+Wasatch,Daggett,0
+Wasatch,Davis,27400
+Wasatch,Duchesne,47900
+Wasatch,Emery,100
+Wasatch,Garfield,0
+Wasatch,Grand,100
+Wasatch,Iron,1700
+Wasatch,Juab,2100
+Wasatch,Kane,0
+Wasatch,Millard,1100
+Wasatch,Morgan,2000
+Wasatch,Piute,0
+Wasatch,Rich,100
+Wasatch,Salt Lake,120200
+Wasatch,San Juan,0
+Wasatch,Sanpete,100
+Wasatch,Sevier,300
+Wasatch,Summit,144300
+Wasatch,Tooele,2200
+Wasatch,Uintah,10500
+Wasatch,Utah,81100
+Wasatch,Wasatch,0
+Wasatch,Washington,400
+Wasatch,Wayne,100
+Wasatch,Weber,4400
+Washington,Beaver,66800
+Washington,Box Elder,12700
+Washington,Cache,500
+Washington,Carbon,300
+Washington,Daggett,0
+Washington,Davis,11800
+Washington,Duchesne,200
+Washington,Emery,8200
+Washington,Garfield,8000
+Washington,Grand,1600
+Washington,Iron,295300
+Washington,Juab,27700
+Washington,Kane,24700
+Washington,Millard,36900
+Washington,Morgan,100
+Washington,Piute,300
+Washington,Rich,0
+Washington,Salt Lake,57900
+Washington,San Juan,600
+Washington,Sanpete,600
+Washington,Sevier,29200
+Washington,Summit,2700
+Washington,Tooele,5900
+Washington,Uintah,0
+Washington,Utah,37800
+Washington,Wasatch,400
+Washington,Washington,0
+Washington,Wayne,300
+Washington,Weber,5200
+Wayne,Beaver,100
+Wayne,Box Elder,0
+Wayne,Cache,0
+Wayne,Carbon,300
+Wayne,Daggett,0
+Wayne,Davis,100
+Wayne,Duchesne,0
+Wayne,Emery,900
+Wayne,Garfield,3000
+Wayne,Grand,1700
+Wayne,Iron,200
+Wayne,Juab,200
+Wayne,Kane,200
+Wayne,Millard,300
+Wayne,Morgan,0
+Wayne,Piute,400
+Wayne,Rich,0
+Wayne,Salt Lake,500
+Wayne,San Juan,900
+Wayne,Sanpete,200
+Wayne,Sevier,3900
+Wayne,Summit,0
+Wayne,Tooele,0
+Wayne,Uintah,0
+Wayne,Utah,300
+Wayne,Wasatch,0
+Wayne,Washington,200
+Wayne,Wayne,0
+Wayne,Weber,0
+Weber,Beaver,10800
+Weber,Box Elder,253900
+Weber,Cache,115100
+Weber,Carbon,5100
+Weber,Daggett,300
+Weber,Davis,687600
+Weber,Duchesne,1800
+Weber,Emery,3300
+Weber,Garfield,300
+Weber,Grand,1100
+Weber,Iron,14800
+Weber,Juab,21400
+Weber,Kane,800
+Weber,Millard,7900
+Weber,Morgan,56700
+Weber,Piute,200
+Weber,Rich,800
+Weber,Salt Lake,619600
+Weber,San Juan,1200
+Weber,Sanpete,1100
+Weber,Sevier,2400
+Weber,Summit,27300
+Weber,Tooele,25200
+Weber,Uintah,1600
+Weber,Utah,92400
+Weber,Wasatch,4800
+Weber,Washington,6400
+Weber,Wayne,0
+Weber,Weber,0

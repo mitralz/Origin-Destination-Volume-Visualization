@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Data"
+    "\\scripts",
+    "\\scripts\\app",
+    "\\scripts\\d3"
   ],
-  "SelectedNode": "\\Proposal.docx",
+  "SelectedNode": "\\scripts\\app\\barchart.js",
   "PreviewInSolutionExplorer": false
 }
