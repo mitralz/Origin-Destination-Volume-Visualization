@@ -20,21 +20,24 @@ class Selector {
 			.select("#chords")
 			.selectAll("path");
 
-			paths
-				.transition()
-				.style("stroke-opacity",that.opacity.full)
-				.style("fill-opacity", that.opacity.full);
+		paths
+			.transition()
+			.style("stroke-opacity",that.opacity.full)
+			.style("fill-opacity", that.opacity.full);
 		
-		let counties = d3.select("#main")
+		paths = d3.select("#main")
 				.select("#title-map-chord")
 				.select("#map-container")
 				.select("#map")
 				.selectAll("path")	
+		paths
+			.transition()
+			.style("stroke-opacity",0)
+			.style("fill-opacity", that.opacity.outer);
 			
-			counties
-				.transition()
-				.style("stroke-opacity",that.opacity.outer)
-				.style("fill-opacity", that.opacity.outer);
+		texts
+			.transition()
+			.style("font-weight","normal");
 	};
 		
 	fade(county, index) {
@@ -42,7 +45,41 @@ class Selector {
 		
 		function internalFade(d, i) {
 			
+			
+				
 			let paths = d3.select("#main")
+				.select("#title-map-chord")
+				.select("#map-container")
+				.select("#map")
+				.selectAll("path")				
+			
+			paths
+				.transition()
+				.style("stroke-opacity",1)
+				.style("fill-opacity", that.opacity.outer);
+			
+			paths
+				.filter(d => that.geoData[i].properties.NAME10 !== d.properties.NAME10)
+				.transition()
+				.style("stroke-opacity", 0)
+				.style("fill-opacity", that.opacity.partial);
+				
+			let texts = d3.select("#main")
+				.select("#title-map-chord")
+				.select("#map-container")
+				.select("#map")
+				.selectAll("text")	
+				
+			texts
+				.transition()
+				.style("font-weight","bolder");
+				
+			texts
+				.filter(d => that.geoData[i].properties.NAME10 !== d.properties.NAME10)
+				.transition()
+				.style("font-weight","normal");
+				
+			paths = d3.select("#main")
 				.select("#title-map-chord")
 				.select("#chord-diagram")
 				.select("#chords")
@@ -59,25 +96,6 @@ class Selector {
 				.transition()
 				.style("stroke-opacity", that.opacity.faded)
 				.style("fill-opacity", that.opacity.faded);
-				
-			let counties = d3.select("#main")
-				.select("#title-map-chord")
-				.select("#map-container")
-				.select("#map")
-				.selectAll("path")				
-			
-			counties
-				.transition()
-				.style("stroke-opacity",that.opacity.outer)
-				.style("fill-opacity", that.opacity.outer);
-			
-			counties
-				.filter(d => 
-					 that.geoData[i].properties.NAME10 !== d.properties.NAME10
-				)
-				.transition()
-				.style("stroke-opacity", that.opacity.partial)
-				.style("fill-opacity", that.opacity.partial);
 				
 			that.barchart.updateBarchart();
 		};

@@ -50,20 +50,35 @@ class Map {
 		g.append("path")
 			.attr("d",path)
 			.attr("fill",(d,i) => d3.rgb(that.fill(i)))
-			.attr("opacity","0.8");
+			.attr("stroke",(d,i) => d3.rgb(that.fill(i)).darker())
+			.attr("opacity","0.8")
+			.style("stroke-opacity",0)
+			.style("stroke-width","2px");
+			
 		g.on("click", that.selector.fade());
 
 		g.append("text")
 			.attr("class", "county-label")
-			.attr("y", "5px")
+			.attr("y", function(d) {
+				if(d.properties.NAME10 === "Duchesne")
+					return "15px";
+				if(d.properties.NAME10 === "Wasatch")
+					return "-5px";
+				return "7px";
+			})
+			.attr("x", function(d){
+				if(d.properties.NAME10 === "Washington" || d.properties.NAME10 === "Morgan" )
+					return "5px";
+				else 
+					return 0;
+			})
 			.attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
 			.text((d) => {return d.properties.NAME10})
-			.classed("heavy","true")
 			.style("fill-opacity",1)
 			.style("stroke-opacity",0.2)
 			.style("fill","black")
 			.style("stroke","white")
-			.style("stroke-width","0.5px");
+			.style("stroke-width","0.8px");
 		
 	}
 }

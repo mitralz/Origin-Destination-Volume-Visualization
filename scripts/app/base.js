@@ -55,4 +55,6 @@ Promise.all([
 	barchart.updateBarchart();
 	
 	selector.addReference(barchart);
+	
+	selector.fade("Salt Lake County", 17);
 });
