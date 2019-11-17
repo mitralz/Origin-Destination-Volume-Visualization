@@ -1,11 +1,15 @@
 class Selector {
-	constructor(geoData){
+	constructor(geoData,names,colors){
 		this.opacity = {
 				outer: 0.8,
 				full: 0.7,
 				partial: 0.5,
-				faded: 0.02
+				faded: 0.1
 		};
+		
+		this.fill = d3.scaleOrdinal()
+			.domain(d3.range(names.length))
+			.range(colors);
 		
 		this.barchart;
 		this.geoData = geoData;
@@ -85,17 +89,30 @@ class Selector {
 				.select("#chords")
 				.selectAll("path");
 				
-
-			paths
-				.transition()
-				.style("stroke-opacity",that.opacity.full)
-				.style("fill-opacity", that.opacity.full);
 			
 			paths
 				.filter(d => d.source.index != i && d.target.index != i)
 				.transition()
+				.style("stroke", d => 'grey')
+				.style("fill", d => 'grey')
 				.style("stroke-opacity", that.opacity.faded)
 				.style("fill-opacity", that.opacity.faded);
+				
+			paths
+				.filter(d => d.source.index == i)
+				.transition()
+				.style("stroke",d => that.fill(d.target.index))
+				.style("fill",d => that.fill(d.target.index))
+				.style("stroke-opacity",that.opacity.full)
+				.style("fill-opacity", that.opacity.full);
+				
+			paths
+				.filter(d => d.target.index == i)
+				.transition()
+				.style("stroke", d => that.fill(d.source.index))
+				.style("fill", d => that.fill(d.source.index))
+				.style("stroke-opacity",that.opacity.full)
+				.style("fill-opacity", that.opacity.full);
 				
 			that.barchart.updateBarchart();
 		};

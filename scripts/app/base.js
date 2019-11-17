@@ -42,7 +42,7 @@ Promise.all([
 		.style("fill", "black")
 		.text("Mitra Alirezaei, Seth Miller");
 		
-	let selector = new Selector(geoData);
+	let selector = new Selector(geoData,names,colors);
 
 	let chord = new Chord(names,colors,data,selector);
 	chord.createChord();

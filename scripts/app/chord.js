@@ -84,7 +84,7 @@ class Chord {
 		
 		this.opacity = {
 			full: 0.7,
-			faded: 0.02
+			faded: 0.1
 		};
 	}
 	
@@ -145,10 +145,9 @@ class Chord {
 			.enter()
 			.append("path")
 			.attr("class", "chord")
-			.style("stroke", d => d3.rgb(that.fill(d.source.index)).darker())
-			.style("fill", d => that.fill(d.source.index))
+			.style("stroke", d => 'grey')
+			.style("fill", d => 'grey')
 			.attr("d", d3.ribbon().radius(this.dims.innerRadius))
-			.style("stroke-opacity", this.opacity.full)
 			.style("fill-opacity", this.opacity.full);
 
 		console.log(labels);
