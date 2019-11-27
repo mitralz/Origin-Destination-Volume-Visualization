@@ -114,7 +114,7 @@ class Selector {
 				.style("stroke-opacity",that.opacity.full)
 				.style("fill-opacity", that.opacity.full);
 				
-			that.barchart.updateBarchart();
+			that.barchart.updateBarchart(i);
 		};
 		
 		if (typeof county !== 'undefined') 
