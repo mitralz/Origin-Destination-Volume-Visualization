@@ -4,6 +4,104 @@
     text-anchor: middle;
 }
 
+.Beaver{
+    fill: #765fd5;
+}
+
+.BoxElder {
+    fill: #6dc851;
+}
+
+
+.Cache {
+    fill: #bc5dcb;
+}
+
+
+.Carbon{
+    fill: #bbc445;
+}
+
+.Daggett{
+    fill: #6487ee;
+}
+
+.Davis{
+    fill: #d9a93b;
+}
+
+
+.Duchesne{
+    fill: #4b5eb3;
+}
+
+.Emery{
+    fill: #7d9635;
+}
+.Garfield{
+    fill: #cc439c;
+}
+.Grand{
+    fill: #4dad5f;
+}
+.Iron{
+    fill: #d5406a;
+}
+.Juab{
+    fill: #6bdaa3;
+}
+.Kane{
+    fill: #d34338;
+}
+.Millard{
+    fill: #57d5d9;
+}
+.Morgan{
+    fill: #d4702d;
+}
+.Piute{
+    fill: #6bb0e3;
+}
+.Rich{
+    fill: #a8563a;
+}
+.SaltLake{
+    fill: #49ad97;
+}
+.SanJuan{
+    fill: #87539a;
+}
+.Sanpete{
+    fill: #49752d;
+}
+.Sevier{
+    fill: #b08fde;
+}
+.Summit{
+    fill: #b7c57c;
+}
+.Tooele{
+    fill: #5980be;
+}
+.Uintah{
+    fill: #dba06a;
+}
+.Utah{
+    fill: #df8fcb;
+}
+.Wasatch{
+    fill: #388159;
+}
+.Washington{
+    fill: #9f496a;
+}
+.Wayne{
+    fill: #846f2d;
+}
+.Weber{
+    fill: #e5828a;
+}
+
 
 
 
