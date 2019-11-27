@@ -17,7 +17,7 @@ Promise.all([
 	d3.select("#main")
 		.append("svg")
 		.attr("id","title-map-chord")
-		.attr("width",1000)
+		.attr("width",1900)
 		.attr("height",700);
 		
 	d3.select("#title-map-chord")
