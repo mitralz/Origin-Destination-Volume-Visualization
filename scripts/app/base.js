@@ -51,8 +51,8 @@ Promise.all([
 	map.createMap();
 	
 	let barchart = new Barchart(names, colors, data, selector);
-	barchart.createBarchart();
-	barchart.updateBarchart();
+	//barchart.createBarchart();
+	barchart.updateBarchart(17);
 	
 	selector.addReference(barchart);
 	
