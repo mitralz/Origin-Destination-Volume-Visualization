@@ -1,11 +1,11 @@
 class Barchart {
 	constructor(names, colors, data, selector) {
 
-		this.width = 450
-		this.height = 450
-		this.textWidth = 70
-		this.margin = 200
-		this.animationDuration = 2000;
+		this.width = 330
+		this.height = 550
+		this.textWidth = 50
+		this.margin = 100
+		//this.animationDuration = 2000;
 		this.data = data
 		let max = d3.max(data, d => +d.count);
 		let xScale = d3.scaleLinear()
@@ -39,7 +39,7 @@ class Barchart {
 			.attr("viewBox", "0 0 900 900")
 			.attr("width", this.width+this.margin)
 			.attr("height", this.height+this.margin)
-			.attr("transform", `translate(${950},${100})`);
+			.attr("transform", `translate(${832},${100})`);
 		let ent = svg.append("g")
 			.attr("id","entering");
 		let exi = svg.append("g")
@@ -81,6 +81,10 @@ class Barchart {
 		let max1 = d3.max(origin, d => +d.count)
 		let max2 = d3.max(destination, d => +d.count)
 ///////////////////////////////////////////////
+		const ticksAmount = 6;
+		//const tickStep1 = (max1 - 0) / (ticksAmount);
+		//const tickStep2 = (max2 - 0) / (ticksAmount);
+///////////////////////////////////////////////
 		let xScale1 = d3.scaleLinear()
 			.domain([0, Math.max(max1, max2)])
 			.range([0, this.width/2 - this.textWidth +this.margin])
@@ -88,6 +92,9 @@ class Barchart {
 		let formatter = d3.format("~s");
 		let xAxis = d3.axisBottom();
 		xAxis.scale(xScale1)
+			//.ticks(5)
+			.ticks(ticksAmount)
+			//.tickValues(d3.range(0, max1 + tickStep1, tickStep1))
 			.tickFormat(function (d) {
 				if (d === 0) return d; // No label for '0'
 				else if (d < 0) d = d; // No nagative labels
@@ -105,6 +112,9 @@ class Barchart {
 
 		let xAxis2 = d3.axisBottom();
 		xAxis2.scale(xScale3)
+			.ticks(ticksAmount)
+			//.tickValues(d3.range( max2 + tickStep2,0, tickStep2))
+			//.ticks(6)
 			.tickFormat(function (d) {
 				if (d === 0) return d; // No label for '0'
 				else if (d < 0) d = -d; // No nagative labels
@@ -112,11 +122,11 @@ class Barchart {
 			});
 ///////////////////////////////////////////////
 		svg.append("g")
-			.attr("transform", `translate(${this.width+this.textWidth-this.textWidth},${0})`)
+			.attr("transform", `translate(${this.width-10},${0})`)
 			.call(xAxis);
 ///////////////////////////////////////////////
 		svg.append("g")
-			.attr("transform", `translate(${this.textWidth},${0})`)
+			.attr("transform", `translate(${this.textWidth+40},${0})`)
 			.call(xAxis2);
 ///////////////////////////////////////////////
 		let exi = this.exi;
@@ -125,7 +135,7 @@ class Barchart {
 			exi.selectAll("rect")
 			.data(origin)
 			.join("rect")
-			.attr("x",this.width+this.textWidth-this.textWidth)
+			.attr("x",this.width+this.textWidth-this.textWidth-10)
 			.attr("y", (d, i) => (i+2) * spacing)
 			.attr("width", (d) => {return xScale1(+d.count);
 
@@ -192,7 +202,12 @@ class Barchart {
 			.text(function(d) {
 				return d.origin;
 			})
-			.attr("x", (d) => {return this.width-54  - xScale2(- +d.count);
+
+			.attr("x", (d) => {
+				if (d.origin.length <=6){
+					return this.width-44  - xScale2(- +d.count);}
+				if (d.origin.length >6){
+				return this.width-54  - xScale2(- +d.count);}
 
 			})
 			.attr("y",(d, i) => (i+2) * spacing + 10)
@@ -206,9 +221,14 @@ class Barchart {
 			.join("text")
 			.attr("text-anchor", "middle")
 			.text(function(d) {
+				console.log(d.destination.length);
 				return d.destination;
 			})
-			.attr("x", (d) => {return this.width+this.textWidth-this.textWidth+30  + xScale1( +d.count);
+			.attr("x", (d) => {
+				if (d.destination.length <=6){
+				return this.width+10 + xScale1( +d.count); }
+				if (d.destination.length >6){
+					return this.width+20 + xScale1( +d.count); }
 
 			})
 			.attr("y",(d, i) => (i+2) * spacing + 10)
@@ -221,7 +241,7 @@ class Barchart {
 
 		svg.append("text")
 			.text('Entering trips')
-			.attr("x", 0)
+			.attr("x", 90)
 			.attr("y",-10)
 			.attr("font-size", "15px")
 			.attr("alignment-baseline", "middle")
@@ -229,7 +249,7 @@ class Barchart {
 			.attr("transform", `translate(${this.textWidth},${0})`);
 		svg.append("text")
 			.text('Exiting trips')
-			.attr("x", 2*this.width-100)
+			.attr("x", 2*this.width-150)
 			.attr("y",0)
 			.attr("font-size", "15px")
 			.attr("alignment-baseline", "middle")
@@ -238,21 +258,21 @@ class Barchart {
 
 		svg.append("line")          // attach a line
 			.style("stroke", "black")  // colour the line
-			.attr("x1", this.width-this.textWidth +46)     // x position of the first end of the line
-			.attr("y1", 30)      // y position of the first end of the line
-			.attr("x2", this.width-this.textWidth +46)     // x position of the second end of the line
-			.attr("y2", this.height+26);
+			.attr("x1", this.width-this.textWidth +24)     // x position of the first end of the line
+			.attr("y1", 37)      // y position of the first end of the line
+			.attr("x2", this.width-this.textWidth +24)     // x position of the second end of the line
+			.attr("y2", this.height+30);
 
 		svg.append("line")          // attach a line
 			.style("stroke", "black")  // colour the line
-			.attr("x1", this.width +0)     // x position of the first end of the line
-			.attr("y1", 30)      // y position of the first end of the line
-			.attr("x2", this.width +0)     // x position of the second end of the line
-			.attr("y2", this.height+26);
+			.attr("x1", this.width -10)     // x position of the first end of the line
+			.attr("y1", 37)      // y position of the first end of the line
+			.attr("x2", this.width -10)     // x position of the second end of the line
+			.attr("y2", this.height+30);
 
 		svg.append("text")
-			.text("Selected county: " +ex_name)
-			.attr("x", this.width+20)
+			.text("County: " +ex_name)
+			.attr("x", this.width+40)
 			.attr("y",-15)
 			.attr("font-size", "15px")
 			.attr("alignment-baseline", "middle")
