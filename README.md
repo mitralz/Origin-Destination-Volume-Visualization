@@ -3,4 +3,4 @@ The purpose of this project is to visualize the entering and exiting trips to th
 ### Data: 
 The required data are provided in the data folder. 
 ### Code: 
-The codes are provided in the script/app folder.  
+The codes are provided in the scripts/app folder.  
